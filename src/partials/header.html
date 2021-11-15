@@ -26,17 +26,16 @@
           <li><a href="#contact" class="menu__link">Contact</a></li>
       </ul>             
     </nav>
-    <button type="button" class="header__mobile-menu menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+    <button type="button" class="header__mobile-menu" aria-expanded="false" aria-controls="mobile-menu" data-modal-open>
       <svg class="icon" width="20" height="12">
           <use xlink:href="./images/icons/mobile-menu-icons.svg#open-menu""></use>
       </svg>
     </button> 
-    <button class="buy__btn" type="button">Buy now</button>
+    <button class="buy__btn" type="button" data-button-buy>Buy now</button>
   </div>
 
-
-  <div class="menu-container js-menu-container" id="mobile-menu">
-    <button class="menu-close-btn menu-toggle js-close-menu">
+  <div class="menu-container js-menu-container" id="mobile-menu" data-mobile-menu>
+    <button class="menu-close-btn" data-modal-close>
       <svg class="icon" width="14" height="14">
           <use xlink:href="./images/icons/mobile-menu-icons.svg#close-menu"></use>
       </svg>
@@ -53,32 +52,12 @@
 </header>
 
 <section class="hero">
-  <div class="container">
-    <div class="hero__title"> ice cream made with <span>passion</span></div>
-    
+  <div class="hero__container container">
+    <h1 class="hero__title"> ice cream made with <span>passion</span></h1>
     <ul class="hero__btn">
       <li><a class="hero__btn--dark" href="#product">Products</a></li>
       <li><a class="hero__btn--light" href="#howitsmade">How it’s made?</a></li>
     </ul>
-
-    <picture class="icecream-image">
-      <source
-              srcset="
-                    ./images/desktop/hero/header-icecream.png    1x,
-                    ./images/desktop/hero/header-icecream@2x.png 2x"
-              media="(min-width: 1280px)"/>
-      <source
-              srcset="
-                    ./images/tablet/hero/header-icecream.png    1x,
-                    ./images/tablet/hero/header-icecream@2x.png 2x"
-              media="(min-width: 768px)"/>
-      <source
-              srcset="
-                    ./images/mobile/hero/header-icecream.png    1x,
-                    ./images/mobile/hero/header-icecream@2x.png 2x"
-              media="(max-width: 767px)"/>
-      <img src="./images/desktop/hero/header-icecream.png" alt="Icecream" width="171"/>
-    </picture>
     <div class="bio-eco">
       <picture class="bio-eco__img">
         <source
@@ -105,34 +84,51 @@
           </svg>
         </a>
       </div>
-
     </div>
 
-  <ul class="equipment-list">
-    <li class="equipment-list__item">
-      <span class="equipment-list__number">16</span>
-      <p class="equipment-list__text">cafes</p>
-    </li>
-    <li class="equipment-list__item">
-      <span class="equipment-list__number">23</span>
-      <p class="equipment-list__text">food trucks</p>
-    </li>
-  </ul>
+    <picture class="icecream-image">
+      <source
+              srcset="
+                    ./images/desktop/hero/header-icecream.png    1x,
+                    ./images/desktop/hero/header-icecream@2x.png 2x"
+              media="(min-width: 1280px)"/>
+      <source
+              srcset="
+                    ./images/tablet/hero/header-icecream.png    1x,
+                    ./images/tablet/hero/header-icecream@2x.png 2x"
+              media="(min-width: 768px)"/>
+      <source
+              srcset="
+                    ./images/mobile/hero/header-icecream.png    1x,
+                    ./images/mobile/hero/header-icecream@2x.png 2x"
+              media="(max-width: 767px)"/>
+      <img src="./images/desktop/hero/header-icecream.png" alt="Icecream" width="171"/>
+    </picture>
 
-  <picture class="tasty__girl">
-    <source
-            srcset="
-                    ./images/desktop/hero/girl.png    1x,
-                    ./images/desktop/hero/girl@2x.png 2x"
-            media="(min-width: 1280px)"/>
-    <source
-            srcset="
-                    ./images/tablet/hero/girl.png    1x,
-                    ./images/tablet/hero/girl@2x.png 2x"
-            media="(min-width: 768px)"/>
-    <img src="./images/desktop/hero/girl.png" alt="girl" width="293" />
-  </picture>
-  </div>
+    <ul class="equipment-list">
+      <li class="equipment-list__item">
+        <span class="equipment-list__number">16</span>
+        <p class="equipment-list__text">cafes</p>
+      </li>
+      <li class="equipment-list__item">
+        <span class="equipment-list__number">23</span>
+        <p class="equipment-list__text">food trucks</p>
+      </li>
+    </ul>
   
-  
+    <picture class="tasty__girl">
+      <source
+              srcset="
+                      ./images/desktop/hero/girl.png    1x,
+                      ./images/desktop/hero/girl@2x.png 2x"
+              media="(min-width: 1280px)"/>
+      <source
+              srcset="
+                      ./images/tablet/hero/girl.png    1x,
+                      ./images/tablet/hero/girl@2x.png 2x"
+              media="(min-width: 768px)"/>
+      <img src="./images/desktop/hero/girl.png" alt="girl" width="293" />
+    </picture>
+    </div>  
+  </div>  
 </section>
