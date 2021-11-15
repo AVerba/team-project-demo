@@ -5,10 +5,10 @@ $(".single-item").slick();
 },{}],"RSqK":[function(require,module,exports) {
 
 },{}],"sByI":[function(require,module,exports) {
-(()=>{const e=document.querySelector(".js-menu-container"),t=document.querySelector(".js-open-menu"),o=document.querySelector(".js-close-menu"),n=()=>{const o="true"===t.getAttribute("aria-expanded")||!1;t.setAttribute("aria-expanded",!o),e.classList.toggle("is-open"),bodyScrollLock[o?"enableBodyScroll":"disableBodyScroll"](document.body)};t.addEventListener("click",n),o.addEventListener("click",n),window.matchMedia("(min-width: 768px)").addEventListener("change",o=>{o.matches&&(e.classList.remove("is-open"),t.setAttribute("aria-expanded",!1),bodyScrollLock.enableBodyScroll(document.body))})})();
+(()=>{const e={openModalBtn:document.querySelector("[data-modal-open]"),closeModalBtn:document.querySelector("[data-modal-close]"),mobMenu:document.querySelector("[data-mobile-menu]"),buttonBuy:document.querySelector("[data-button-buy]")};function o(){e.openModalBtn.classList.toggle("is-hidden"),e.buttonBuy.classList.toggle("is-hidden"),e.mobMenu.classList.toggle("is-open")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o),window.matchMedia("(min-width: 1279px)").addEventListener("change",o=>{o.matches&&e.mobMenu.classList.contains("is-open")&&(e.buttonBuy.classList.remove("is-hidden"),e.openModalBtn.classList.remove("is-hidden"),e.mobMenu.classList.toggle("is-open"),bodyScrollLock.enableBodyScroll(document.body))})})();
 },{}],"v66i":[function(require,module,exports) {
 function t(){$(".nav__link").click(function(){return $(".active").removeClass("active"),$(this).addClass("active"),$("html, body").stop().animate({scrollTop:$($(this).attr("href")).offset().top-160},700),!1})}t();
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/slider.js"),require("./js/modal.js"),require("./js/mobile-menu.js"),require("./js/anchor.js");
 },{"./sass/main.scss":"clu1","./js/slider.js":"wzuc","./js/modal.js":"RSqK","./js/mobile-menu.js":"sByI","./js/anchor.js":"v66i"}]},{},["Focm"], null)
-//# sourceMappingURL=/team-project-demo/src.dc4b8c53.js.map
+//# sourceMappingURL=/team-project-demo/src.77b1f821.js.map
