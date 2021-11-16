@@ -11,4 +11,4 @@ function t(){$(".nav__link").click(function(){return $(".active").removeClass("a
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/slider.js"),require("./js/modal.js"),require("./js/mobile-menu.js"),require("./js/anchor.js");
 },{"./sass/main.scss":"clu1","./js/slider.js":"wzuc","./js/modal.js":"RSqK","./js/mobile-menu.js":"sByI","./js/anchor.js":"v66i"}]},{},["Focm"], null)
-//# sourceMappingURL=/team-project-demo/src.5b9ef47d.js.map
+//# sourceMappingURL=/team-project-demo/src.fa35e9af.js.map
