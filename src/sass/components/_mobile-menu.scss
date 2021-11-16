@@ -8,7 +8,7 @@
   padding-top: 60px;
   filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
 
-  background-color: #e17992;
+  background-color: var(--mob-menu-bg-color);
   @include for-size(tablet) {
     width: 254px;
   }
@@ -31,7 +31,7 @@
   display: block;
   width: 14px;
   height: 14px;
-  background-color: #e17992;
+  background-color: var(--mob-menu-bg-color);
   position: absolute;
   top: 23px;
   right: 23px;
@@ -40,8 +40,8 @@
   padding-top: 19px;
   // .mobile-menu__link
   li {
-    border-top: 1px solid #e18298;
-    border-bottom: 1px solid #e18298;
+    border-top: 1px solid var(--mob-menu-border);
+    border-bottom: 1px solid var(--mob-menu-border);
   }
 
   &__link {
