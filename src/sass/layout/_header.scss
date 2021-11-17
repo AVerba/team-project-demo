@@ -2,7 +2,36 @@
   display: block;
   @include add-size(199px, 50px);
 }
+.btn-to-up {
+  opacity: 0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 12%;
+  right: 12%;
+  width: 60px;
+  height: 60px;
+  background-color: var(--hero-bg-color);
+  border-radius: 50%;
 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-btn-bg-lite);
+  }
+  .to-up {
+    width: 30px;
+    height: 30px;
+    transform: rotate(270deg);
+    fill: #d41443;
+  }
+}
+.animate {
+  opacity: 1;
+}
 .container {
   display: flex;
   justify-content: space-between;
