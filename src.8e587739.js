@@ -8,7 +8,9 @@ $(".single-item").slick();
 (()=>{const e={openModalBtn:document.querySelector("[data-modal-open]"),closeModalBtn:document.querySelector("[data-modal-close]"),mobMenu:document.querySelector("[data-mobile-menu]"),buttonBuy:document.querySelector("[data-button-buy]"),clickMenuItem:document.querySelectorAll("[data-mobile-item]")};function o(){e.openModalBtn.classList.toggle("is-hidden"),e.buttonBuy.classList.toggle("is-hidden"),e.mobMenu.classList.toggle("is-open")}console.log(e.clickMenuItem),e.clickMenuItem.forEach(e=>{e.addEventListener("click",o)}),e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o),window.matchMedia("(min-width: 1279px)").addEventListener("change",o=>{o.matches&&e.mobMenu.classList.contains("is-open")&&(e.buttonBuy.classList.remove("is-hidden"),e.openModalBtn.classList.remove("is-hidden"),e.mobMenu.classList.toggle("is-open"),bodyScrollLock.enableBodyScroll(document.body))})})();
 },{}],"v66i":[function(require,module,exports) {
 function t(){$(".nav__link").click(function(){return $(".active").removeClass("active"),$(this).addClass("active"),$("html, body").stop().animate({scrollTop:$($(this).attr("href")).offset().top-160},700),!1})}t();
+},{}],"Dviw":[function(require,module,exports) {
+let o=window.scrollY;const e=document.querySelector(".btn-to-up"),n=0,t=()=>e.classList.add("animate"),l=()=>e.classList.remove("animate");window.addEventListener("scroll",function(){0!=(o=window.scrollY)?(t(),console.log(o)):l()});
 },{}],"Focm":[function(require,module,exports) {
-"use strict";require("./sass/main.scss"),require("./js/slider.js"),require("./js/modal.js"),require("./js/mobile-menu.js"),require("./js/anchor.js");
-},{"./sass/main.scss":"clu1","./js/slider.js":"wzuc","./js/modal.js":"RSqK","./js/mobile-menu.js":"sByI","./js/anchor.js":"v66i"}]},{},["Focm"], null)
-//# sourceMappingURL=/team-project-demo/src.d32ca8f0.js.map
+"use strict";require("./sass/main.scss"),require("./js/slider.js"),require("./js/modal.js"),require("./js/mobile-menu.js"),require("./js/anchor.js"),require("./js/anchor_to-top");
+},{"./sass/main.scss":"clu1","./js/slider.js":"wzuc","./js/modal.js":"RSqK","./js/mobile-menu.js":"sByI","./js/anchor.js":"v66i","./js/anchor_to-top":"Dviw"}]},{},["Focm"], null)
+//# sourceMappingURL=/team-project-demo/src.8e587739.js.map
